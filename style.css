@@ -1,0 +1,709 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+}
+
+/* CSS HEADER */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    flex-wrap: wrap;
+}
+
+.item-menu {
+    padding: 20px;
+    font-size: 15px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.menu-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+header{
+    background-color: #132235;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #4fa19c;
+}
+
+a:hover{
+    color: #6ddad3;
+}
+
+.botão-entrar button{
+    background-color: #132235;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    color: #4fa19c;
+    width: 60px;
+    height: 30px;
+    border-color: #ffffff;
+    border-width: 0.5px;
+    border-radius: 3px;
+}
+
+.botão-entrar button:hover{
+    color: #6ddad3;
+}
+
+/* CSS MAIN HOME */
+
+.busca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px; 
+    background-image: url(./imgs/dormitorio4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.busca-texto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px; 
+    color: white;
+}
+
+.busca-texto h1{
+    font-weight: 700;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.15);
+}
+
+.busca-imoveis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;  
+}
+.box-busca{
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    color: #132235;
+    background-color: white;
+}
+
+.tipo{
+    padding: 20px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: #132235;
+}
+.busca-imoveis select:hover {
+    background: rgb(170, 170, 170);
+}
+
+.busca-imoveis input[type=text]{
+    padding: 20px;
+    font-size: 17px;
+    border: none; 
+    color: #132235;
+}
+
+.busca-imoveis button {
+    padding: 20px;
+    margin-left: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: #132235;
+}
+.busca-imoveis button:hover {
+    background: rgb(170, 170, 170);
+}
+
+
+.texto-box{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(247, 245, 245);
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 2px 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    margin: 3em 10% 0;
+    padding: 40px;
+    text-align: center;
+    transition: all 350ms;   
+}
+.texto-box:hover {
+    box-shadow: rgba(56,60,67,.07) 0 0 0 1px,rgba(56,60,67,.15) 0 8px 14px 1px;
+}
+.texto-box1 {
+    color: #132235;
+    font-family: "CerebriSans-Bold","Roboto",sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.texto-box2{
+    color: #666;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+.wrapper-container{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    margin: 20px;
+    width: 200px;
+    transition: all 0.3s ease-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+}
+
+.info{
+    padding: 5px;
+    height: 80px;
+    text-align: left;
+}
+
+.card h1{
+    color: #132235;
+    font-size: 9px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.card p {
+    color: #132235;
+    font-size: 10px;
+    background-color: white;
+    padding-bottom: 2px;
+}
+
+main img{
+    width: 100%;
+}
+
+.button-card{
+    height: 200px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+.button-card button{
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #132235;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans","Roboto",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+}
+.button-card button:hover{
+    background: #F6F9FE;
+    color: #1467d3;
+}
+.button-card button:hover:active{
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+.button-card button:focus {
+    outline: none;
+    border: 2px solid mediumturquoise;
+}
+
+/* CSS MAIN IMÓVEIS PARA ALUGAR */
+
+.container-imoveis{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    
+}
+.seletor-container{
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(202, 202, 202);
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 100vh;
+
+}
+
+.seletor-titulo{
+    padding-top: 5px;
+    font-size: large;
+}
+
+.seletor-bairro{
+    padding-top: 20px;
+}
+
+.seletor-bairro-placeholder{
+    padding-top: 5px;
+}
+
+.seletor-tipo{
+    padding-top: 20px;
+}
+
+.seletor-aluguel{
+    padding-top: 20px;
+}
+.seletor-aluguel-minimo{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.seletor-botao{
+    padding: 20px;
+    
+}
+
+.card-container-imoveis{
+    flex-grow: 2;
+}
+
+.card-imoveis{
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    width: 60vw;
+    transition: all 0.3s ease-out;
+    height: 200px;
+    cursor: pointer;
+}
+
+.card-imoveis:hover {
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    transform: translateY(-5px);
+}
+
+
+.card-imoveis img{
+    width: 300px;
+}
+
+.card-imoveis-info{
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;    
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    color: #132235
+}
+
+.card-imoveis-info h4{
+    padding-bottom: 10px;
+}
+
+.card-imoveis-info p{
+    font-size: small;
+    padding-bottom: 30px;
+}
+
+.card-imoveis-titulo-h3{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #132235;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-imoveis-titulo-p{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: dimgray;
+    font-size: small;
+}
+
+.card-imoveis img{
+    width: 300px;
+}
+
+
+.card-imoveis-titulo-h3{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #132235;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-imoveis-titulo-p{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: dimgray;
+    font-size: small;
+}
+
+/* CSS COMO FUNCIONA */
+
+.comoFunciona{
+    background-color: #ffffff;
+    padding: 30px;
+    font-family: "CerebriSans-Bold","Roboto",sans-serif;
+}  
+
+.comoFunciona .imagemEtexto{
+    background-color: #ffffff;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}  
+
+.comoFunciona .perguntas1{
+    grid-column: 2/ span 2;
+}
+
+.comoFunciona .perguntas2{
+    grid-column: 1/ span 2;
+}
+
+.comoFunciona .perguntas3{
+    grid-column: 2/ span 2;
+}
+
+.comoFunciona img{
+    width: 200px; 
+    border-radius: 50%;
+    border: solid grey 0.5px;
+}
+
+.comoFunciona{
+    background-color: #ffffff;
+    padding: 30px;
+    font-family: "CerebriSans-Bold","Roboto",sans-serif;
+}  
+
+.comoFunciona .imagemEtexto{
+    background-color: #ffffff;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}  
+
+.comoFunciona .perguntas1{
+    grid-column: 2/ span 2;
+}
+
+.comoFunciona .perguntas2{
+    grid-column: 1/ span 2;
+}
+
+.comoFunciona .perguntas3{
+    grid-column: 2/ span 2;
+}
+
+.comoFunciona img{
+    width: 200px; 
+    border-radius: 50%;
+    border: solid grey 0.5px;
+}
+
+
+/* MAIN CONTATO */
+
+.container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+
+}
+
+.contato{
+    width: 100%;
+    max-width: 500px;
+    
+}
+
+.contato h3{
+    text-align: center;
+    color: #132235;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.field{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    font-size: 16px;
+    color: #132235;
+}
+.textarea{
+    height: 150px;
+    color: #132235;
+}
+
+/* CSS FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+    background-color: #132235;
+    font-family: "Montserrat",Helvetica,Arial,Verdana,sans-serif;
+    font-size: medium;
+    color: #ffffff;
+}
+
+.endereço{
+    padding-top: 70px;
+}
+
+.direitos{
+    padding-top: 50px;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+    .links{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu-logo img{
+        height: 4em; 
+        width: 10em;  
+        align-items: center; 
+    }
+    .menu-home{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+    }
+    .menu-aba{
+        padding: 10px;
+    }
+    .teste{
+        display: none;
+    }
+
+    .busca-imoveis{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tipo{
+        width: 100%;
+    }
+    
+    .teste2{
+        width: 20rem;    
+    }
+
+    .wrapper-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+    .container-imoveis{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seletor-container{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 50vh;
+    }
+    .card-container-imoveis{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-imoveis{
+        width: 100vw;
+        height: auto;
+    }
+    .card-imoveis-info{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 2px;
+        font-size: smaller;
+    }
+    .card-imoveis-titulo-p{
+        padding-bottom: 5px;
+        text-align: left;
+    }
+    
+    .comoFunciona{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagemEtexto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .direitos{
+        margin-bottom: 50px;
+    }
+
+    .footer-img {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
